@@ -44,7 +44,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 bg-gray-100">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-18 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-14 h-10 bg-primary rounded-xl flex items-center justify-center">
