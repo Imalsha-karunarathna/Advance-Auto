@@ -25,9 +25,9 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Book Appointment", href: "/book" },
+    // { name: "Book Appointment", href: "/book" },
     { name: "About", href: "/about" },
-    { name: "Testimonials", href: "/testimonials" },
+    { name: "Testimonials", href: "/#testimonials" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -100,7 +100,7 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-sm font-medium transition-colors hover:text-primary ${
+                      className={`text-sm ml-5 font-medium transition-colors hover:text-primary ${
                         isActive(item.href)
                           ? "text-primary"
                           : "text-muted-foreground"
