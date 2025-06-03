@@ -25,9 +25,9 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Book Appointment", href: "/book" },
+    // { name: "Book Appointment", href: "/book" },
     { name: "About", href: "/about" },
-    { name: "Testimonials", href: "/testimonials" },
+    { name: "Testimonials", href: "/#testimonials" },
     { name: "Contact", href: "/contact" },
   ];
 
