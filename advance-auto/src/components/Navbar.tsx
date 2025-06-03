@@ -100,7 +100,7 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-sm font-medium transition-colors hover:text-primary ${
+                      className={`text-sm ml-5 font-medium transition-colors hover:text-primary ${
                         isActive(item.href)
                           ? "text-primary"
                           : "text-muted-foreground"

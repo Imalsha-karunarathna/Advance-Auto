@@ -21,14 +21,14 @@ export default function ServiceHero() {
   }, [heroImages.length]);
 
   return (
-    <div className="relative bg-[#005f70] text-white overflow-hidden min-h-[90vh] flex items-center">
+    <div className="relative bg-gradient-to-br from-primary to-[#005f70] text-white overflow-hidden min-h-[90vh] flex items-center">
       {/* Background Images Carousel */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentImageIndex ? "opacity-30" : "opacity-30"
+              index === currentImageIndex ? "opacity-10" : "opacity-10"
             }`}
           >
             <img
@@ -53,7 +53,7 @@ export default function ServiceHero() {
                 PROFESSIONAL AUTO SERVICES
               </div>
 
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Expert{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f79406] to-[#ff8c00]">
                   Automotive
@@ -61,7 +61,7 @@ export default function ServiceHero() {
                 Services
               </h1>
 
-              <p className="text-xl md:text-2xl opacity-90 leading-relaxed max-w-2xl">
+              <p className="text-xl md:text-xl opacity-90 leading-relaxed max-w-2xl">
                 From routine maintenance to complex repairs, our certified
                 technicians provide comprehensive care for all makes and models.
               </p>
@@ -70,7 +70,7 @@ export default function ServiceHero() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="#logbook">
-                <Button className="bg-[#f79406] hover:bg-[#e6850a] text-white transition-all duration-300 text-lg px-8 py-6 h-auto font-semibold group shadow-2xl hover:shadow-[#f79406]/25">
+                <Button className="bg-[#f79406] hover:bg-[#e6850a] text-white transition-all duration-300 text-lg px-8 py-4 h-auto font-semibold group shadow-2xl hover:shadow-[#f79406]/25">
                   Explore Our Services
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
@@ -79,7 +79,7 @@ export default function ServiceHero() {
               <Link href="/contact">
                 <Button
                   variant="outline"
-                  className="border-2 border-white text-black hover:bg-white hover:text-[#005f70] transition-all duration-300 text-lg px-8 py-6 h-auto font-semibold backdrop-blur-sm"
+                  className="border-2 border-white text-black hover:bg-white hover:text-[#005f70] transition-all duration-300 text-lg px-8 py-4 h-auto font-semibold backdrop-blur-sm"
                 >
                   Book a Service
                 </Button>
